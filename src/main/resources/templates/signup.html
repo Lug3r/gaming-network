@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+
+<head th:replace="template :: header">
+</head>
+<body>
+<nav th:replace="template :: navigation"></nav>
+<h1>Signup</h1>
+
+<form method="post">
+    <table>
+        <tr>
+            <td><label id="username">Username</label></td>
+            <td>
+                <input name="username" type="text" th:value="${ username }"></input>
+                <!-- <span class="error" th:text="${ errors.username_error }">un error</span> -->
+            </td>
+        </tr>
+        <tr>
+            <td><label id="password">Password</label></td>
+            <td>
+                <input name="password" type="password"></input>
+                <!-- <span class="error" th:text="${ errors.password_error }">pw error</span> -->
+            </td>
+        </tr>
+        <tr>
+            <td><label id="verify">Verify Password</label></td>
+            <td>
+                <input name="verify" type="password"></input>
+                <!-- <span class="error" th:text="${ errors.verify_error }">verify error</span> -->
+            </td>
+        </tr>
+        <tr>
+            <td><label id="email">Email (optional)</label></td>
+            <td>
+                <input name="email" type="email" th:value="${ email }"></input>
+                <!-- <span class="error" th:text="${ errors.email_error }">email error</span> -->
+            </td>
+        </tr>
+    </table>
+    <input type="submit"></input>
+</form>
+
+</body>
+</html>
