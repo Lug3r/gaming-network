@@ -5,7 +5,8 @@ import com.fasterxml.jackson.annotation.JsonTypeInfo;
 
 import org.jetbrains.annotations.NotNull;
 import com.sun.javafx.beans.IDProperty;
-import org.springframework.data.annotation.Id;
+import  javax.persistence.Id;
+
 
 import javax.persistence.Column;
 import javax.persistence.Embeddable;
