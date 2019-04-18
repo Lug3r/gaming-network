@@ -4,7 +4,7 @@ import org.springframework.boot.autoconfigure.SpringBootApplication;
 
 import static org.springframework.boot.SpringApplication.run;
 
-@SpringBootqApplication
+@SpringBootApplication
 public class TheGamingNetworkApplication {
 
 	public static void main(String[] args) {

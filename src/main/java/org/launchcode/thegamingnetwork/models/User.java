@@ -8,6 +8,8 @@ import java.util.List;
 import java.util.regex.Matcher;
 import java.util.regex.Pattern;
 
+
+@Entity
 @Table(name = "user")
 public class User extends AbstractEntity {
 

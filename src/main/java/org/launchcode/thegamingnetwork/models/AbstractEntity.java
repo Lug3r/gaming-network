@@ -8,8 +8,11 @@ import com.sun.javafx.beans.IDProperty;
 import org.springframework.data.annotation.Id;
 
 import javax.persistence.Column;
+import javax.persistence.Embeddable;
+import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
 
+@Entity
 public abstract class AbstractEntity {
     private int uid;
 
