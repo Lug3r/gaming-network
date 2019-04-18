@@ -14,10 +14,12 @@ import javax.persistence.GeneratedValue;
 
 @Entity
 public abstract class AbstractEntity {
-    private int uid;
-
     @Id
     @GeneratedValue
+    private int uid;
+
+
+
     @NotNull
     @Column(name = "uid", unique = true)
     public int getUid() {
